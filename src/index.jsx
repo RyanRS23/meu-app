@@ -6,6 +6,9 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import './contador/index.jsx';
 import './contador/index.scss';
 import Contador from './contador/index.jsx';
+import './textoon/textoon.jsx'; 
+import Texto from './textoon/textoon.jsx';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,6 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/contador" element={<Contador />} />
+        <Route path="/textoon" element={<Texto />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
